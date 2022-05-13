@@ -1,3 +1,40 @@
+## Automated ELK Stack Deployment
+The files in this repository were used to configure the network depicted below.
+![TODO: Update the path with the name of your diagram](Images/Elk_docker_ps.png)
+These files have been tested and used to generate a live ELK deployment on Azure. They can
+be used to either recreate the entire deployment pictured above. Alternatively, select portions of
+the YML file may be used to install only certain pieces of it, such as Filebeat.
+- _TODO: Enter the playbook file._
+This document contains the following details:
+Description of the Topologu
+Access Policies
+ELK Configuration
+Beats in Use
+Machines Being Monitored
+How to Use the Ansible Build
+### Description of the Topology
+The main purpose of this network is to expose a load-balanced and monitored instance of
+DVWA, the D*mn Vulnerable Web Application.
+Load balancing ensures that the application will be highly available, in addition to restricting
+access to the network.
+Load balancing will protect from the denial of service attack as it will help to divert the
+traffic and to distribute the load. Moreover, It helps with the intrusion prevention by restricting
+access to the servers holding the application.
+A jump box provides a controlled access to the servers/VMs holding the applications and helps
+with the management of these hosts.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the
+files and system metrics.
+What does Filebeat watch for?
+Filebeat watches are for changs in the files in the locations that we specify or the log
+files. Then collects and send the date to lostash/elasticsearch.
+What does Metricbeat record?
+Metricbeat collets the metric data from the services and the operating system and sends
+it to logstash/elasticsearch.
+The configuration details of each machine may be found below.
+_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables)
+to add/remove values from the table_.
+
+
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes  | 10.0.0.1 10.0.0.2 | Personal 
